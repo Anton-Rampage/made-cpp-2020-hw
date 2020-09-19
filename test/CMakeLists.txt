@@ -1,0 +1,2 @@
+add_executable(double_test double_type_test.cpp)
+target_link_libraries(double_test gtest check_double)
