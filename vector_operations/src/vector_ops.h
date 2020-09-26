@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <cassert>
+#include <type_traits>
 
 template<class T>
 concept Derived = std::is_same_v<int, T> || std::is_same_v<T, T>;
