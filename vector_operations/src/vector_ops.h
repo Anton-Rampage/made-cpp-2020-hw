@@ -9,7 +9,7 @@
 namespace task {
 
 template<class T>
-concept Derived = std::is_same_v<int, T> || std::is_same_v<T, T>;
+concept Derived = std::is_same_v<int, T> || std::is_same_v<double, T>;
 
 template<Derived T>
 std::vector<T> operator+(const std::vector<T> &vec) {
