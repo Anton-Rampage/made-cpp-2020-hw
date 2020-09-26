@@ -6,7 +6,7 @@
 #include <valarray>
 #include <sstream>
 #include <cmath>
-#include "src/vector_ops.h"
+#include "vector_ops.h"
 
 
 using namespace task;
