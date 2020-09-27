@@ -3,20 +3,21 @@
 #include "stdlib.h"
 
 
-int32_t count_det (int32_t* numbers);
+int32_t count_det(int32_t *numbers);
 
-int main () {
-	int32_t* numbers = malloc(sizeof(int32_t) * 9);
-	
-	for (uint8_t i = 0; i < 9; ++ i)
-		scanf("%d", &numbers[i]);
+int main() {
+    int32_t *numbers = malloc(sizeof(int32_t) * 9);
 
-	const int32_t det = count_det(numbers);
+    for (uint8_t i = 0; i < 9; ++i) {
+        scanf("%d", &numbers[i]);
+    }
 
-	printf("%d\n", det);
+    const int32_t det = count_det(numbers);
 
-	free(numbers);
+    printf("%d\n", det);
 
-	return 0;
+    free(numbers);
+
+    return 0;
 }
 
